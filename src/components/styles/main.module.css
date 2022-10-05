@@ -1,0 +1,14 @@
+.main{
+  font-size: 40px;
+  color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* p{
+  -webkit-text-stroke: 2px black 
+} */
+/* изменятся все пэшки */
+.mainText{
+  -webkit-text-stroke: 2px black 
+}

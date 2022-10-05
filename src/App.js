@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
 
 function App() {
+
+  // потом про props
+  // допустим получили инфу с сервера
+  let data = 'это информация с сервера'; 
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // рассказать про компонентный подход
+
+    // про jsx (и что у него под капотом)
+    // на самом деле JSX это
+
+    // <MyButton color="blue"
+    //   Нажми меня
+    // </MyButton>
+
+    // React.createElement(
+    //   MyButton,
+    //   {color: 'blue'},
+    //   'Нажми меня'
+    // )
+
+    // про то что можно вернуть только один элемент а в нем может быть много
+    // про react fragment <> </>
+
+    <div className="app">
+      <Header />
+      <Main serverData={data}/>
+      <Footer color={'green'}/>
     </div>
   );
 }
 
 export default App;
+
